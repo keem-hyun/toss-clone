@@ -15,6 +15,7 @@ class CustomTableViewCell: UITableViewCell {
     @IBOutlet weak var customLabel: UILabel!
     
     
+    
     var delegate: ButtonTappedDelegate?
     
     
@@ -34,8 +35,6 @@ class CustomTableViewCell: UITableViewCell {
         // Configure the view for the selected state
 
     }
-    
-    
     
     
     @IBAction func sendButtonTapped(_ sender: UIButton) {

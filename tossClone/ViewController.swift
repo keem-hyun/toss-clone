@@ -10,16 +10,25 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var bankButton: UIButton!
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    var tableViewData: [cellData] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableViewData = [cellData(title: "보통예금(IBK기업은행)", image: UIImage(named: "kiup")!), cellData(title: "토스뱅크 통장", image: UIImage(named: "toss")!), cellData(title: "KB국민ONE통장-보통예금", image: UIImage(named: "kookmin")!), cellData(title: "증권, 토스증권", image: UIImage(named: "toss")!), cellData(title: "포인트, 머니 1개", image: UIImage(named: "toss")!)]
+        
         makeUI()
     }
     
     func makeUI() {
         bankButton.layer.masksToBounds = true
         bankButton.layer.cornerRadius = 15
-        //        bankButton.contentHorizontalAlignment = .left;
+        
+        scrollView.layer.masksToBounds = true
+        scrollView.layer.cornerRadius = 15
         
     }
     
@@ -29,7 +38,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 5
+        return tableViewData.count
         
     }
     
@@ -37,11 +46,17 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell", for: indexPath) as? CustomTableViewCell else { return UITableViewCell() }
         
+        cell.customLabel.text = tableViewData[indexPath.row].title
+        
+        cell.customImageView.image = tableViewData[indexPath.row].image
+        
         cell.delegate = self
         
         return cell
         
     }
+    
+    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("cell tapped")
