@@ -81,13 +81,96 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfI-Bm-m0y">
+                                                <rect key="frame" x="347" y="25" width="16" height="28.666666666666671"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                <color key="textColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Rex-yx-lAZ">
+                                                <rect key="frame" x="0.0" y="70" width="373" height="730"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <prototypes>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomTableViewCell" rowHeight="96" id="ePT-ID-5oa" customClass="CustomTableViewCell" customModule="tossClone" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="50" width="373" height="96"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ePT-ID-5oa" id="3ON-oS-Ofk">
+                                                            <rect key="frame" x="0.0" y="0.0" width="373" height="96"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="794-5X-8MK">
+                                                                    <rect key="frame" x="10" y="25" width="50" height="50"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="50" id="5xL-et-R48"/>
+                                                                        <constraint firstAttribute="width" constant="50" id="KlP-SA-cOT"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="잔액 보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JI0-9E-jrx">
+                                                                    <rect key="frame" x="70" y="53.999999999999993" width="66.666666666666686" height="21.666666666666664"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wax-Jr-zSh">
+                                                                    <rect key="frame" x="303" y="36" width="60" height="33"/>
+                                                                    <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="5Rf-qH-fbu"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="송금">
+                                                                        <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </state>
+                                                                    <connections>
+                                                                        <action selector="sendButtonTapped:" destination="ePT-ID-5oa" eventType="touchUpInside" id="Iyw-4u-dnM"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="보통예금(IBK나라사랑통장)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7e-fQ-Ccl">
+                                                                    <rect key="frame" x="70.000000000000014" y="31" width="167.33333333333337" height="18"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                                    <color key="textColor" systemColor="systemGrayColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="JI0-9E-jrx" firstAttribute="leading" secondItem="794-5X-8MK" secondAttribute="trailing" constant="10" id="0Vf-bf-dGK"/>
+                                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JI0-9E-jrx" secondAttribute="trailing" constant="20" symbolic="YES" id="2wZ-rv-31e"/>
+                                                                <constraint firstItem="c7e-fQ-Ccl" firstAttribute="leading" secondItem="794-5X-8MK" secondAttribute="trailing" constant="10" id="FUX-eh-arS"/>
+                                                                <constraint firstItem="794-5X-8MK" firstAttribute="top" secondItem="3ON-oS-Ofk" secondAttribute="top" constant="25" id="KKM-Mj-Y8D"/>
+                                                                <constraint firstItem="JI0-9E-jrx" firstAttribute="top" secondItem="c7e-fQ-Ccl" secondAttribute="bottom" constant="5" id="XLi-3a-1dy"/>
+                                                                <constraint firstItem="794-5X-8MK" firstAttribute="leading" secondItem="3ON-oS-Ofk" secondAttribute="leading" constant="10" id="YY2-Z1-7Bc"/>
+                                                                <constraint firstItem="wax-Jr-zSh" firstAttribute="top" secondItem="3ON-oS-Ofk" secondAttribute="topMargin" constant="25" id="bJh-Gz-95e"/>
+                                                                <constraint firstItem="wax-Jr-zSh" firstAttribute="trailing" secondItem="3ON-oS-Ofk" secondAttribute="trailingMargin" constant="10" id="fLo-qd-DlQ"/>
+                                                                <constraint firstItem="c7e-fQ-Ccl" firstAttribute="top" secondItem="3ON-oS-Ofk" secondAttribute="topMargin" constant="20" id="nUW-0e-OHP"/>
+                                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="c7e-fQ-Ccl" secondAttribute="trailing" constant="20" symbolic="YES" id="p9p-0A-Upl"/>
+                                                                <constraint firstItem="wax-Jr-zSh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="c7e-fQ-Ccl" secondAttribute="trailing" constant="8" symbolic="YES" id="swq-qR-tbb"/>
+                                                            </constraints>
+                                                        </tableViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="customImageView" destination="794-5X-8MK" id="qxs-aX-ecS"/>
+                                                            <outlet property="customLabel" destination="c7e-fQ-Ccl" id="Bcv-TX-fmN"/>
+                                                        </connections>
+                                                    </tableViewCell>
+                                                </prototypes>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="7Ly-Uk-cam"/>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="DbN-mQ-K95"/>
+                                                </connections>
+                                            </tableView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstItem="zfI-Bm-m0y" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gig-tu-OsA" secondAttribute="trailing" constant="8" symbolic="YES" id="03J-QM-1UL"/>
+                                            <constraint firstAttribute="trailing" secondItem="Rex-yx-lAZ" secondAttribute="trailing" id="2Id-Yp-BVX"/>
+                                            <constraint firstItem="Rex-yx-lAZ" firstAttribute="leading" secondItem="Q9k-ff-Qxv" secondAttribute="leading" id="BUY-wJ-XPn"/>
+                                            <constraint firstAttribute="trailing" secondItem="zfI-Bm-m0y" secondAttribute="trailing" constant="10" id="Hwj-QB-uD6"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gig-tu-OsA" secondAttribute="trailing" constant="20" symbolic="YES" id="OIo-HB-xFD"/>
                                             <constraint firstAttribute="height" constant="800" id="QwO-gA-Bat"/>
+                                            <constraint firstItem="Rex-yx-lAZ" firstAttribute="top" secondItem="Q9k-ff-Qxv" secondAttribute="top" constant="70" id="Z5c-9F-gPe"/>
                                             <constraint firstItem="gig-tu-OsA" firstAttribute="top" secondItem="Q9k-ff-Qxv" secondAttribute="top" constant="25" id="ocB-cD-tOh"/>
                                             <constraint firstItem="gig-tu-OsA" firstAttribute="leading" secondItem="Q9k-ff-Qxv" secondAttribute="leading" constant="10" id="oha-9M-Eah"/>
+                                            <constraint firstAttribute="bottom" secondItem="Rex-yx-lAZ" secondAttribute="bottom" id="pOC-4o-VSp"/>
+                                            <constraint firstItem="zfI-Bm-m0y" firstAttribute="top" secondItem="Q9k-ff-Qxv" secondAttribute="top" constant="25" id="rRo-Id-Xtl"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -129,7 +212,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="959.5419847328244" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="817.55725190839689" y="-335.21126760563379"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="PMt-R7-tEq">
@@ -137,6 +220,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="dpf-WQ-U3F" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cY8-2n-bnN">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -150,6 +234,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Image" width="27.666666030883789" height="27"/>
         <image name="bell.fill" catalog="system" width="123" height="128"/>
         <image name="homekit" catalog="system" width="128" height="104"/>
         <image name="mappin" catalog="system" width="106" height="128"/>
