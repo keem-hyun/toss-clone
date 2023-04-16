@@ -36,6 +36,12 @@ class CustomTableViewCell: UITableViewCell {
 
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        self.accessoryType = .none
+    }
+    
     
     @IBAction func sendButtonTapped(_ sender: UIButton) {
         delegate?.cellButtonTapped()
