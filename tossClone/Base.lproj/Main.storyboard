@@ -152,10 +152,6 @@
                                                         </connections>
                                                     </tableViewCell>
                                                 </prototypes>
-                                                <connections>
-                                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="7Ly-Uk-cam"/>
-                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="DbN-mQ-K95"/>
-                                                </connections>
                                             </tableView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -209,6 +205,7 @@
                     <connections>
                         <outlet property="bankButton" destination="2Vf-OL-qST" id="74V-Vy-tLr"/>
                         <outlet property="scrollView" destination="fs2-bM-zk8" id="lJW-Pn-kBs"/>
+                        <outlet property="tableView" destination="Rex-yx-lAZ" id="NSW-RL-y5u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -227,17 +224,35 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="dl3-Pf-2Ns"/>
+                        <segue destination="YFT-1Y-ShT" kind="relationship" relationship="viewControllers" id="vcS-hp-qlC"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="02j-21-5eD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.824427480916029" y="-27.464788732394368"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="OgH-aM-Rcl">
+            <objects>
+                <viewController id="YFT-1Y-ShT" customClass="TabBarSecondViewController" customModule="tossClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TzG-ds-TXe">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="vYG-NA-Jbp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="line.3.horizontal" catalog="system" selectedImage="line.3.horizontal" id="5H3-Ro-yzW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9fF-V0-OaV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="806" y="316"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bell.fill" catalog="system" width="123" height="128"/>
         <image name="homekit" catalog="system" width="128" height="104"/>
         <image name="kiup" width="27.666666030883789" height="27"/>
+        <image name="line.3.horizontal" catalog="system" width="128" height="65"/>
         <image name="mappin" catalog="system" width="106" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

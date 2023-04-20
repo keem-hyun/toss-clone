@@ -16,6 +16,7 @@
 		9C998BDF29EA8940009EA667 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C998BDE29EA8940009EA667 /* CustomTableViewCell.swift */; };
 		9C998BE129EAC1BB009EA667 /* ButtonTappedDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C998BE029EAC1BB009EA667 /* ButtonTappedDelegate.swift */; };
 		9C998BE329EADF1A009EA667 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C998BE229EADF1A009EA667 /* DataModels.swift */; };
+		9C998BE729F0CCFF009EA667 /* TabBarSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C998BE629F0CCFF009EA667 /* TabBarSecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		9C998BDE29EA8940009EA667 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		9C998BE029EAC1BB009EA667 /* ButtonTappedDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTappedDelegate.swift; sourceTree = "<group>"; };
 		9C998BE229EADF1A009EA667 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
+		9C998BE629F0CCFF009EA667 /* TabBarSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarSecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				9C998B3329D3D94C009EA667 /* AppDelegate.swift */,
 				9C998B3529D3D94C009EA667 /* SceneDelegate.swift */,
 				9C998B3729D3D94C009EA667 /* ViewController.swift */,
+				9C998BE629F0CCFF009EA667 /* TabBarSecondViewController.swift */,
 				9C998BE229EADF1A009EA667 /* DataModels.swift */,
 				9C998BE029EAC1BB009EA667 /* ButtonTappedDelegate.swift */,
 				9C998BDE29EA8940009EA667 /* CustomTableViewCell.swift */,
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C998BE729F0CCFF009EA667 /* TabBarSecondViewController.swift in Sources */,
 				9C998BE129EAC1BB009EA667 /* ButtonTappedDelegate.swift in Sources */,
 				9C998B3829D3D94C009EA667 /* ViewController.swift in Sources */,
 				9C998B3429D3D94C009EA667 /* AppDelegate.swift in Sources */,
